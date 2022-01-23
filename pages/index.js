@@ -16,7 +16,12 @@ export async function getStaticProps() {
   const blogPosts = await getAllFilesFrontMatter('blog')
 
   const posts = [...springPosts, ...reactPosts, ...algorithmPosts, ...blogPosts]
-  console.log(posts)
+
+  posts.sort(function (a, b) {
+    if (a.date > b.date) return -1
+    if (a.date < b.date) return 1
+    return
+  })
 
   return { props: { posts } }
 }
@@ -88,13 +93,13 @@ export default function Home({ posts }) {
       </div>
       {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">
-          <Link
+          {/* <Link
             href="/blog"
             className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             aria-label="all posts"
           >
             All Posts &rarr;
-          </Link>
+          </Link> */}
         </div>
       )}
       {/* {siteMetadata.newsletter.provider !== '' && (

@@ -24,7 +24,7 @@ export default function React({ posts, initialDisplayPosts, pagination }) {
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title="All Posts"
+        title="React"
         type="react"
       />
     </>

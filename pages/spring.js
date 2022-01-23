@@ -24,7 +24,7 @@ export default function Spring({ posts, initialDisplayPosts, pagination }) {
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title="All Posts"
+        title="Spring"
         type="spring"
       />
     </>

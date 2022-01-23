@@ -3,7 +3,7 @@ const siteMetadata = {
   author: '한지훈',
   headerTitle: '나의 성장기록',
   description: 'Spring, React, TIL등을 작성하는 기술블로그',
-  language: 'en-us',
+  language: 'ko-KR',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
@@ -16,7 +16,7 @@ const siteMetadata = {
   facebook: '',
   youtube: '',
   linkedin: '',
-  locale: 'en-US',
+  locale: 'ko-KR',
   analytics: {
     // supports plausible, simpleAnalytics, umami or googleAnalytics
     plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
