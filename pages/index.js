@@ -71,8 +71,10 @@ export default function Home({ posts }) {
                             ))}
                           </div>
                         </div>
+                        <div className="prose text-gray-500 max-w-none dark:text-gray-400"></div>
                         <Link
                           href={`/${folder}/${slug}`}
+                          className="prose text-gray-500 max-w-none dark:text-gray-400"
                           // className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                           aria-label={`Read "${title}"`}
                         >

@@ -33,9 +33,10 @@ export async function getStaticProps({ params }) {
   const springPosts = await getAllFilesFrontMatter('spring')
   const reactPosts = await getAllFilesFrontMatter('react')
   const algorithmPosts = await getAllFilesFrontMatter('algorithm')
+  const tilPosts = await getAllFilesFrontMatter('TIL')
   const blogPosts = await getAllFilesFrontMatter('blog')
 
-  const allPosts = [...springPosts, ...reactPosts, ...algorithmPosts, ...blogPosts]
+  const allPosts = [...springPosts, ...reactPosts, ...algorithmPosts, ...tilPosts, ...blogPosts]
 
   const filteredPosts = allPosts.filter(
     (post) => post.draft !== true && post.tags.map((t) => kebabCase(t)).includes(params.tag)
