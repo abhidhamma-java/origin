@@ -9,12 +9,14 @@ export async function getStaticProps() {
   const springTags = await getAllTags('spring')
   const reactTags = await getAllTags('react')
   const algorithmTags = await getAllTags('algorithm')
+  const tilTags = await getAllTags('TIL')
   const blogTags = await getAllTags('blog')
 
   const tags = [
     ...Object.entries(springTags),
     ...Object.entries(reactTags),
     ...Object.entries(algorithmTags),
+    ...Object.entries(tilTags),
     ...Object.entries(blogTags),
   ]
 

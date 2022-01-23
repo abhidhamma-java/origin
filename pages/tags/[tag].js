@@ -14,9 +14,10 @@ export async function getStaticPaths() {
   const springTags = await getAllTags('spring')
   const reactTags = await getAllTags('react')
   const algorithmTags = await getAllTags('algorithm')
+  const tilTags = await getAllTags('TIL')
   const blogTags = await getAllTags('blog')
 
-  const tags = { ...springTags, ...reactTags, ...algorithmTags, ...blogTags }
+  const tags = { ...springTags, ...reactTags, ...algorithmTags, ...tilTags, ...blogTags }
 
   return {
     paths: Object.keys(tags).map((tag) => ({

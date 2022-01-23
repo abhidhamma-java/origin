@@ -13,9 +13,10 @@ export async function getStaticProps() {
   const springPosts = await getAllFilesFrontMatter('spring')
   const reactPosts = await getAllFilesFrontMatter('react')
   const algorithmPosts = await getAllFilesFrontMatter('algorithm')
+  const tilPosts = await getAllFilesFrontMatter('TIL')
   const blogPosts = await getAllFilesFrontMatter('blog')
 
-  const posts = [...springPosts, ...reactPosts, ...algorithmPosts, ...blogPosts]
+  const posts = [...springPosts, ...reactPosts, ...algorithmPosts, ...tilPosts, ...blogPosts]
 
   posts.sort(function (a, b) {
     if (a.date > b.date) return -1
@@ -58,7 +59,7 @@ export default function Home({ posts }) {
                         <div>
                           <h2 className="text-2xl font-bold leading-8 tracking-tight">
                             <Link
-                              href={`/blog/${slug}`}
+                              href={`/${folder}/${slug}`}
                               className="text-gray-900 dark:text-gray-100"
                             >
                               {title}
@@ -70,19 +71,17 @@ export default function Home({ posts }) {
                             ))}
                           </div>
                         </div>
-                        <div className="prose text-gray-500 max-w-none dark:text-gray-400">
-                          {summary}
-                        </div>
-                      </div>
-                      <div className="text-base font-medium leading-6">
                         <Link
                           href={`/${folder}/${slug}`}
-                          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                          // className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                           aria-label={`Read "${title}"`}
                         >
-                          Read more &rarr;
+                          <div className="prose text-gray-500 max-w-none dark:text-gray-400">
+                            {summary}
+                          </div>
                         </Link>
                       </div>
+                      <div className="text-base font-medium leading-6"></div>
                     </div>
                   </div>
                 </article>
