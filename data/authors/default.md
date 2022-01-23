@@ -1,16 +1,17 @@
 ---
-name: Tails Azimuth
+name: 한지훈
 avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+occupation: developer
+company:
+email: abhidhamma91@gmail.com
+twitter:
+linkedin:
+github: https://github.com/abhidhamma-java
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+안녕하세요! 배움을 사랑하는 2년차 개발자, 한지훈입니다.
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
+개발자가 되기전부터 몰입하는 즐거움을 따라 살다가
+지금은 개발에 푹 빠져있습니다.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+무엇보다도 꾸준함의 가치를 알기에 1일 1커밋을 생활화 합니다.

@@ -10,7 +10,13 @@ import NewsletterForm from '@/components/NewsletterForm'
 const MAX_DISPLAY = 5
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('blog')
+  const springPosts = await getAllFilesFrontMatter('spring')
+  const reactPosts = await getAllFilesFrontMatter('react')
+  const algorithmPosts = await getAllFilesFrontMatter('algorithm')
+  const blogPosts = await getAllFilesFrontMatter('blog')
+
+  const posts = [...springPosts, ...reactPosts, ...algorithmPosts, ...blogPosts]
+  console.log(posts)
 
   return { props: { posts } }
 }
@@ -31,9 +37,9 @@ export default function Home({ posts }) {
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
+            const { slug, date, title, summary, tags, folder } = frontMatter
             return (
-              <li key={slug} className="py-12">
+              <li key={`${slug}${title}`} className="py-12">
                 <article>
                   <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
                     <dl>
@@ -65,7 +71,7 @@ export default function Home({ posts }) {
                       </div>
                       <div className="text-base font-medium leading-6">
                         <Link
-                          href={`/blog/${slug}`}
+                          href={`/${folder}/${slug}`}
                           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                           aria-label={`Read "${title}"`}
                         >
@@ -91,11 +97,11 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )}
-      {siteMetadata.newsletter.provider !== '' && (
+      {/* {siteMetadata.newsletter.provider !== '' && (
         <div className="flex items-center justify-center pt-4">
           <NewsletterForm />
         </div>
-      )}
+      )} */}
     </>
   )
 }
