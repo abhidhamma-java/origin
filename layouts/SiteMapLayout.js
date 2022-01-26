@@ -19,9 +19,5 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { slug, fileName, date, title, tags, folder } = frontMatter
 
-  return (
-    <SectionContainer>
-      <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
-    </SectionContainer>
-  )
+  return <div className="pb-8 prose dark:prose-dark max-w-none">{children}</div>
 }
