@@ -7,8 +7,8 @@ const siteMetadata = require('../data/siteMetadata')
   const prettierConfig = await prettier.resolveConfig('./.prettierrc.js')
   const pages = await globby([
     'pages/*.js',
-    'data/blog/**/*.mdx',
-    'data/blog/**/*.md',
+    'data/**/*.mdx',
+    'data/**/*.md',
     'public/tags/**/*.xml',
     '!pages/_*.js',
     '!pages/api',
@@ -21,14 +21,26 @@ const siteMetadata = require('../data/siteMetadata')
               .map((page) => {
                 const path = page
                   .replace('pages/', '/')
-                  .replace('data/blog', '/blog')
+                  .replace('data/blog', 'blog')
+                  .replace('data/algorithm', 'algorithm')
+                  .replace('data/spring', 'spring')
+                  .replace('data/react', 'react')
+                  .replace('data/TIL', 'TIL')
                   .replace('public/', '/')
                   .replace('.js', '')
                   .replace('.mdx', '')
                   .replace('.md', '')
                   .replace('/feed.xml', '')
+                  .replace('//', '/')
                 const route = path === '/index' ? '' : path
-                if (page === `pages/404.js` || page === `pages/blog/[...slug].js`) {
+                if (
+                  page === `pages/404.js` ||
+                  page === `pages/blog/[...slug].js` ||
+                  page === `pages/spring/[...slug].js` ||
+                  page === `pages/react/[...slug].js` ||
+                  page === `pages/TIL/[...slug].js` ||
+                  page === `pages/algorithm/[...slug].js`
+                ) {
                   return
                 }
                 return `
