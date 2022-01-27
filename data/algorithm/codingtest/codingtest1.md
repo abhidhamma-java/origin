@@ -1,7 +1,7 @@
 ---
-title: 코딩테스트1
+title: 첫번째 코딩테스트
 date: '2022-01-23'
-tags: ['코딩테스트', '프로그래머스', '알고리즘']
+tags: ['codingtest', 'programmers', 'algorithm']
 draft: false
 summary: '처음으로 본 코딩테스트'
 ---

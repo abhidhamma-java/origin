@@ -18,7 +18,7 @@ CRUD를 만드는 프로젝트를 진행해 보기로 했다.
 
 ## DB설계
 
-![DB설계이미지](/static/images/md-images/ee3d012a4729264f8e06c7f3bab74eb66e9944a487e041e0474dc2e2566cd5b2.png)
+![DB설계 이미지](/static/images/md-images/ee3d012a4729264f8e06c7f3bab74eb66e9944a487e041e0474dc2e2566cd5b2.png)
 
 유저가 question을 통해서 diary를 쓴다.  
 쓴 diary는 post로 발행할 수 있고  
@@ -30,7 +30,7 @@ CRUD를 만드는 프로젝트를 진행해 보기로 했다.
 
 ## 폴더구조
 
-![picture 9](../../public/static/images/md-images/0b79e1bf861bc34004557917cf9e0659a7bff9da216e1c96fa6245a18e8cd64a.png)
+![폴더구조 이미지](/static/images/md-images/0b79e1bf861bc34004557917cf9e0659a7bff9da216e1c96fa6245a18e8cd64a.png)
 
 - controller
   - API의 요청과 응답을 담당
