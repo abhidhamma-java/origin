@@ -5,7 +5,7 @@ const siteMetadata = {
   description: 'Spring, React, TIL등을 작성하는 기술블로그',
   language: 'ko-KR',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://boongyee.com',
+  siteUrl: 'https://www.boongyee.com',
   siteRepo: 'https://github.com/abhidhamma-java/',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
