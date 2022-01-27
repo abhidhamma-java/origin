@@ -6,8 +6,6 @@ draft: false
 summary: 보일러플레이트로 api 만들어보기
 ---
 
-# selfhelp
-
 ## [프로젝트 웹 IDE에서 열어보기](https://github1s.com/abhidhamma-java/selfhelp)
 
 ---

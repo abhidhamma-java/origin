@@ -6,10 +6,6 @@ draft: false
 summary: String을 내림차순으로 정렬하기
 ---
 
-# String을 내림차순으로 정렬하기
-
----
-
 String을 오름차순으로 정렬하는 방법은  
 char로 바꾸어서 Arrays.sort()를 이용하면되는데
 

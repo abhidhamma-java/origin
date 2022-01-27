@@ -6,8 +6,4 @@ draft: false
 summary: react프로젝트 프론트엔드
 ---
 
-# disorder-frontend
-
 ## [프로젝트 웹 IDE에서 열어보기](https://github1s.com/abhidhamma-private/disorder-backend)
-
----

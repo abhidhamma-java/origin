@@ -6,10 +6,6 @@ draft: false
 summary: int와 char를 서로 변환하기
 ---
 
-# int와 char를 서로 변환하기
-
----
-
 1. char에서 int로 변환하기
 
 ```java

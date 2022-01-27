@@ -6,10 +6,6 @@ draft: false
 summary: Set
 ---
 
-# Set
-
----
-
 ```java
 HashSet<Integer> set = new HashSet<>();
 

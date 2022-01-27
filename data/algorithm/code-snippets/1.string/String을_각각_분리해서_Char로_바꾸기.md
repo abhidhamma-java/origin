@@ -6,10 +6,6 @@ draft: false
 summary: String을 각각 분리해서 Char로 바꾸기
 ---
 
-# String을 각각 분리해서 Char로 바꾸기
-
----
-
 ```java
 for(char c : s.toCharArray()) {
   ...

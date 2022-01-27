@@ -6,8 +6,6 @@ draft: false
 summary: String 뒤집기
 ---
 
-# String 뒤집기
-
 ```java
 String s = "abcde";
 String reverse = "";
