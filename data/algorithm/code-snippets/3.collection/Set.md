@@ -1,6 +1,6 @@
 ---
 title: Set
-date: '2022-01-26'
+date: '2022-01-21'
 tags: ['algorithm', 'collection']
 draft: false
 summary: Set
