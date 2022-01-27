@@ -22,7 +22,7 @@ export async function getStaticProps() {
 
   const posts = [...springPosts, ...reactPosts, ...algorithmPosts, ...tilPosts, ...blogPosts]
 
-  const sitemap = await getFileBySlug('sitemap', 'spring-site-map')
+  const sitemap = await getFileBySlug('sitemap', 'sitemap')
 
   posts.sort(function (a, b) {
     if (a.date > b.date) return -1
